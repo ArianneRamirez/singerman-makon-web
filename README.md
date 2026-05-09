@@ -1,37 +1,91 @@
-# Sitio estático Singerman & Makón
+# Singerman & Makón — sitio estático
 
-Versión estática limpia para editar en VS Code y versionar en GitHub.
+Versión estática del sitio S&M para  versionar en GitHub y publicar con GitHub Pages.
 
 ## Estructura
 
-- `index.html`: página principal.
-- `pages/`: páginas internas.
-- `assets/css/styles.css`: estilos globales.
-- `assets/js/main.js`: interacciones del menú, servicios, recomendador y portfolio.
-- `data/site-data.js`: textos, servicios y proyectos editables.
+```text
+index.html
+pages/
+  servicios.html
+  portfolio.html
+  quienes-somos.html
+  proyectos/
+assets/
+  css/styles.css
+  js/main.js
+  img/
+    equipo/
+    portfolio/
+    logo/
+data/site-data.js
+```
 
-## Cómo usar
+## Cómo editar contenido
 
-1. Abrir la carpeta en VS Code.
-2. Instalar la extensión **Live Server**.
-3. Click derecho en `index.html` → **Open with Live Server**.
-4. Para subir a GitHub: crear repositorio y subir todos los archivos.
+- Textos generales de páginas: editar directamente los archivos `.html`.
+- Servicios y proyectos listados dinámicamente: editar `data/site-data.js`.
+- Estilos visuales: editar `assets/css/styles.css`.
+- Interacciones: editar `assets/js/main.js`.
 
-## Nota
+## Imágenes
+- Equipo: `assets/img/equipo/`
+- Portfolio: `assets/img/portfolio/`
+- Logo: `assets/img/logo/`
 
-Las imágenes están referenciadas desde el WordPress actual mediante URL remota. Si luego querés que el sitio sea 100% independiente, descargá esas imágenes a `assets/img/` y reemplazá las URLs en `data/site-data.js` y en los HTML.
-
-
-## Páginas individuales de proyectos
-
-La carpeta `pages/proyectos/` contiene una página HTML por cada proyecto listado en Portfolio.
-Cada página incluye un bloque reservado para la imagen principal del proyecto.
-
-Para agregar una imagen:
-1. Guardar el archivo en `assets/img/portfolio/`.
-2. Usar el nombre sugerido en la ficha de cada página, por ejemplo: `estrategia-para-el-desarrollo-de-la-oferta-turistica-boliviana.jpg`.
-3. Reemplazar el bloque `.project-hero-image` por:
+En páginas individuales de proyectos, la ruta correcta desde `pages/proyectos/` es:
 
 ```html
-<img class="project-main-img" src="../../assets/img/portfolio/nombre-del-proyecto.jpg" alt="Nombre del proyecto">
+<img src="../../assets/img/portfolio/nombre-del-archivo.jpg" alt="Descripción">
 ```
+
+## Formulario de contacto con Formspree
+
+El formulario ya está preparado en `index.html`.
+
+Buscá esta línea:
+
+```html
+<form class="contact-form" data-contact-form action="https://formspree.io/f/FORM_ID_REEMPLAZAR" method="POST">
+```
+
+Reemplazá `FORM_ID_REEMPLAZAR` por tu ID real de Formspree.
+
+Ejemplo:
+
+```html
+<form class="contact-form" data-contact-form action="https://formspree.io/f/xleqabcd" method="POST">
+```
+
+Pasos en Formspree:
+
+1. Crear cuenta en https://formspree.io/
+2. Crear un nuevo form.
+3. Copiar el endpoint que empieza con `https://formspree.io/f/`.
+4. Pegar ese endpoint en el atributo `action` del formulario.
+5. Subir cambios a GitHub.
+6. Hacer una prueba desde la web publicada.
+
+## SEO incorporado
+
+Se agregaron mejoras básicas:
+
+- `<title>` único por página.
+- `<meta name="description">` por página.
+- etiquetas Open Graph básicas.
+- `robots.txt`.
+- `sitemap.xml` editable.
+- textos alternativos en imágenes principales.
+- estructura semántica con `header`, `main`, `section`, `article`, `footer`.
+
+Antes de publicar definitivamente, editá `sitemap.xml` y reemplazá `https://TU-USUARIO.github.io/TU-REPO/` por la URL real del sitio.
+
+## Publicación recomendada
+
+Para GitHub Pages:
+
+1. Subir todos los archivos al repo.
+2. Ir a `Settings > Pages`.
+3. Elegir `Deploy from a branch`.
+4. Branch: `main`.
+5. Folder: `/root`.

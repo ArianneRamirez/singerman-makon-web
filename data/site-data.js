@@ -14,7 +14,7 @@ window.SITE_DATA = {
       title: 'Planificación y Desarrollo',
       shortText: 'Diseñamos estrategias integrales para el desarrollo turístico, orientadas a potenciar la competitividad de los destinos y mejorar la calidad de vida de las comunidades.',
       text: 'Impulsamos el desarrollo turístico a través de estrategias integrales que fortalecen la competitividad de los destinos y promueven una gestión eficiente, sostenible y articulada entre actores públicos, privados y comunitarios.',
-      image: 'https://gold-raccoon-127065.hostingersite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-6-2026-05_03_44-PM-1-edited.png',
+      image: 'img/servicios/planificacion.png',
       products: [
         'Planes Maestros de Turismo Sostenible',
         'Planes de Ordenamiento Territorial Turístico',
@@ -32,7 +32,7 @@ window.SITE_DATA = {
       title: 'Marketing y Comunicación',
       shortText: 'Creamos estrategias de posicionamiento y promoción que ponen en valor la identidad de cada destino y conectan con sus mercados clave.',
       text: 'Diseñamos estrategias de posicionamiento y promoción que potencian la identidad de los destinos y conectan de manera efectiva con sus mercados prioritarios.',
-      image: 'https://gold-raccoon-127065.hostingersite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-7-2026-03_02_27-AM-1-edited.png',
+      image: '../assets/img/servicios/marketing.png',
       products: [
         'Planes de marketing y posicionamiento turístico',
         'Diseño e implementación de estrategias de promoción',
@@ -48,7 +48,7 @@ window.SITE_DATA = {
       title: 'Análisis y Evaluación Económica',
       shortText: 'Generamos información estratégica para la toma de decisiones, evaluando el impacto económico y la viabilidad de proyectos turísticos.',
       text: 'Generamos información estratégica para la toma de decisiones, evaluando el desempeño del sector y el impacto económico y social del turismo.',
-      image: 'https://gold-raccoon-127065.hostingersite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-7-2026-03_03_59-AM-1-edited.png',
+      image: '../assets/img/servicios/analisis.png',
       products: [
         'Evaluación de proyectos de inversión',
         'Estudios de impacto económico y social del turismo',
@@ -64,7 +64,7 @@ window.SITE_DATA = {
       title: 'Inteligencia de Mercado',
       shortText: 'Desarrollamos sistemas avanzados de inteligencia turística para anticipar tendencias, monitorear el desempeño y optimizar la gestión del destino.',
       text: 'Desarrollamos sistemas de información turística que permiten anticipar tendencias, monitorear el desempeño y optimizar la gestión de destinos mediante el uso de analítica avanzada y tecnologías emergentes.',
-      image: 'https://gold-raccoon-127065.hostingersite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-7-2026-03_04_59-AM-1-edited.png',
+      image: '../assets/img/servicios/inteligencia.png',
       products: [
         'Diseño e implementación de observatorios de turismo sostenible',
         'Plataformas de información turística',
@@ -83,7 +83,7 @@ window.SITE_DATA = {
       title: 'Fusiones y Adquisiciones',
       shortText: 'Asesoramos procesos de inversión, compra, venta y expansión empresarial, facilitando oportunidades estratégicas de crecimiento en el sector.',
       text: 'Asesoramos procesos de inversión y reestructuración empresarial, facilitando oportunidades estratégicas de crecimiento en el sector turístico.',
-      image: 'https://gold-raccoon-127065.hostingersite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-7-2026-03_09_21-AM-1-edited.png',
+      image: '../assets/img/servicios/fusiones.png',
       products: [
         'Asesoramiento en compra y venta de empresas',
         'Búsqueda y evaluación de oportunidades de inversión',
@@ -99,7 +99,7 @@ window.SITE_DATA = {
       title: 'Sostenibilidad y Gestión Ambiental',
       shortText: 'Diseñamos e implementamos estrategias de gestión ambiental, mitigación y adaptación al cambio climático, y valorización del patrimonio natural y cultural.',
       text: 'Promovemos un desarrollo turístico responsable mediante la integración de criterios ambientales, sociales y culturales en la planificación, gestión y operación de destinos y proyectos.',
-      image: 'https://gold-raccoon-127065.hostingersite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-7-2026-03_13_13-AM-2-1024x683.png',
+      image: '../assets/img/servicios/sostenibilidad.png',
       products: [
         'Planes de gestión ambiental para destinos y proyectos',
         'Implementación de certificación internacional Biosphere de destinos sostenibles',
