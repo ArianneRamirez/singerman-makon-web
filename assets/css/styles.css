@@ -704,6 +704,11 @@ body:not(.home) .site-header {
   font-weight: 900;
 }
 
+.hero-servicios img {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
 .service-detail-content {
   padding: clamp(26px, 4vw, 42px);
 }

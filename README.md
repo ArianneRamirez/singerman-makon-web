@@ -66,6 +66,9 @@ Pasos en Formspree:
 5. Subir cambios a GitHub.
 6. Hacer una prueba desde la web publicada.
 
+Prueba: Usuario: arlenemak12@gmail.com - Contraseña: qYLx8fUmQuj63*U
+Luego reemplazar esto por el endpoint correspondiente a la cuenta S&M
+
 ## SEO incorporado
 
 Se agregaron mejoras básicas:
