@@ -5,6 +5,37 @@
 const $ = (selector, ctx = document) => ctx.querySelector(selector);
 const $$ = (selector, ctx = document) => [...ctx.querySelectorAll(selector)];
 const { services = [], projects = [] } = window.SITE_DATA || {};
+const CONFIG = window.APP_CONFIG || {};
+const LABELS = {
+  service: 'Servicio',
+  seeMore: 'Ver más',
+  seeProject: 'Ver proyecto →',
+  allAreas: 'Todas las áreas',
+  noProjects: 'No se encontraron proyectos con esos filtros.',
+  stepOrigin: '¿De dónde viene?',
+  privateCompany: 'Empresa privada',
+  publicAgency: 'Organismo público',
+  other: 'Otro',
+  stepNeed: '¿Qué necesita su empresa?',
+  recommended: 'Servicio recomendado',
+  restart: 'Empezar de nuevo',
+  servicePath: 'pages/servicios.html',
+  projectPreviewBase: 'pages/proyectos/',
+  projectGridBase: 'proyectos/',
+  formReady: 'Formulario listo. Para activarlo, reemplazá FORM_ID_REEMPLAZAR en el atributo action por tu endpoint de Formspree.',
+  sending: 'Enviando...',
+  sent: 'Gracias. Tu consulta fue enviada correctamente.',
+  sendError: 'Hubo un problema al enviar el formulario. Revisá la configuración de Formspree o intentá nuevamente.',
+  submitText: 'Enviar consulta',
+  ...CONFIG.labels,
+};
+const ASSET_BASE = CONFIG.assetBase || './assets/';
+function assetUrl(path = '') {
+  if (/^https?:\/\//.test(path)) return path;
+  const clean = String(path).replace(/^\.\//, '').replace(/^\.\.\/assets\//, '').replace(/^assets\//, '');
+  return ASSET_BASE + clean;
+}
+
 
 // Header transparente que gana blur al hacer scroll.
 const header = $('[data-header]');
@@ -33,13 +64,13 @@ function renderServices() {
     <article class="service-panel ${index === 0 ? 'is-active' : ''}" tabindex="0">
       <div class="service-panel-inner">
         <div class="service-panel-media">
-          <img src="./assets/${service.image}" alt="${service.title}" loading="lazy">
+          <img src="${assetUrl(service.image)}" alt="${service.title}" loading="lazy">
         </div>
         <div class="service-content">
-          <p class="service-number">Servicio ${String(index + 1).padStart(2, '0')}</p>
+          <p class="service-number">${LABELS.service} ${String(index + 1).padStart(2, '0')}</p>
           <h3>${service.title}</h3>
           <p>${service.shortText || service.text}</p>
-          <a href="pages/servicios.html#${service.slug}">Ver más</a>
+          <a href="${LABELS.servicePath}#${service.slug}">${LABELS.seeMore}</a>
         </div>
       </div>
     </article>`).join('');
@@ -62,16 +93,16 @@ function renderWizard() {
   const renderStepOne = () => {
     wrapper.innerHTML = `
       <div class="steps"><b>1</b><span>2</span></div>
-      <h3>¿De dónde viene?</h3>
-      <button type="button">Empresa privada</button>
-      <button type="button">Organismo público</button>
-      <button type="button">Otro</button>`;
+      <h3>${LABELS.stepOrigin}</h3>
+      <button type="button">${LABELS.privateCompany}</button>
+      <button type="button">${LABELS.publicAgency}</button>
+      <button type="button">${LABELS.other}</button>`;
   };
 
   const renderStepTwo = () => {
     wrapper.innerHTML = `
       <div class="steps"><span>1</span><b>2</b></div>
-      <h3>¿Qué necesita su empresa?</h3>
+      <h3>${LABELS.stepNeed}</h3>
       ${needs.map((need, index) => `<button type="button" data-need="${index}">${need}</button>`).join('')}`;
   };
 
@@ -88,11 +119,11 @@ function renderWizard() {
 
     const service = services[Number(event.target.dataset.need || 0)];
     wrapper.innerHTML = `
-      <p class="eyebrow">Servicio recomendado</p>
+      <p class="eyebrow">${LABELS.recommended}</p>
       <h3>${service.title}</h3>
       <p>${service.shortText || service.text}</p>
-      <a class="btn" href="pages/servicios.html#${service.slug}">Ver servicio</a>
-      <button class="ghost" type="button" data-restart-wizard>Empezar de nuevo</button>`;
+      <a class="btn" href="${LABELS.servicePath}#${service.slug}">${LABELS.seeMore}</a>
+      <button class="ghost" type="button" data-restart-wizard>${LABELS.restart}</button>`;
   });
 
   wrapper.addEventListener('click', (event) => {
@@ -108,11 +139,11 @@ function renderProjectsPreview() {
   if (!wrapper) return;
 
   wrapper.innerHTML = projects.slice(0, 6).map((project) => `
-    <a class="project-card" href="pages/proyectos/${project.slug}.html">
+    <a class="project-card" href="${LABELS.projectPreviewBase}${project.slug}.html">
       <span>${project.category}</span>
       <h3>${project.title}</h3>
       <p>${project.country}</p>
-      <small>Ver proyecto →</small>
+      <small>${LABELS.seeProject}</small>
     </a>`).join('');
 }
 
@@ -124,7 +155,7 @@ function renderPortfolio() {
   const category = $('[data-project-category]');
   const categories = [...new Set(projects.map((project) => project.category))];
 
-  category.innerHTML = '<option value="">Todas las áreas</option>' + categories.map((item) => `<option>${item}</option>`).join('');
+  category.innerHTML = `<option value="">${LABELS.allAreas}</option>` + categories.map((item) => `<option>${item}</option>`).join('');
 
   const paint = () => {
     const term = search.value.toLowerCase();
@@ -136,12 +167,12 @@ function renderPortfolio() {
     });
 
     grid.innerHTML = filtered.map((project) => `
-      <a class="project-card" href="proyectos/${project.slug}.html">
+      <a class="project-card" href="${LABELS.projectGridBase}${project.slug}.html">
         <span>${project.category}</span>
         <h3>${project.title}</h3>
         <p>${project.country}</p>
-        <small>Ver proyecto →</small>
-      </a>`).join('') || '<p>No se encontraron proyectos con esos filtros.</p>';
+        <small>${LABELS.seeProject}</small>
+      </a>`).join('') || `<p>${LABELS.noProjects}</p>`;
   };
 
   search.addEventListener('input', paint);
@@ -163,13 +194,13 @@ async function handleContactForm() {
     const isConfigured = action.includes('formspree.io/f/') && !action.includes('REEMPLAZAR');
 
     if (!isConfigured) {
-      note.textContent = 'Formulario listo. Para activarlo, reemplazá FORM_ID_REEMPLAZAR en el atributo action por tu endpoint de Formspree.';
+      note.textContent = LABELS.formReady;
       note.classList.add('is-success');
       return;
     }
 
     submit.disabled = true;
-    submit.textContent = 'Enviando...';
+    submit.textContent = LABELS.sending;
 
     try {
       const response = await fetch(action, {
@@ -181,14 +212,14 @@ async function handleContactForm() {
       if (!response.ok) throw new Error('No se pudo enviar el formulario.');
 
       form.reset();
-      note.textContent = 'Gracias. Tu consulta fue enviada correctamente.';
+      note.textContent = LABELS.sent;
       note.classList.add('is-success');
     } catch (error) {
-      note.textContent = 'Hubo un problema al enviar el formulario. Revisá la configuración de Formspree o intentá nuevamente.';
+      note.textContent = LABELS.sendError;
       note.classList.remove('is-success');
     } finally {
       submit.disabled = false;
-      submit.textContent = 'Enviar consulta';
+      submit.textContent = LABELS.submitText;
     }
   });
 }

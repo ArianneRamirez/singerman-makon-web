@@ -1069,3 +1069,32 @@ body:not(.home) .site-header {
     text-align: center;
   }
 }
+
+
+/* Selector de idiomas */
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .35rem;
+  border: 1px solid rgba(0, 91, 150, .16);
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  backdrop-filter: blur(8px);
+}
+.language-switcher a {
+  padding: .35rem .55rem;
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--blue, #005b96);
+  line-height: 1;
+}
+.language-switcher a[aria-current="true"] {
+  background: var(--blue, #005b96);
+  color: #fff;
+}
+@media (max-width: 860px) {
+  .language-switcher { margin-top: .75rem; width: max-content; }
+}

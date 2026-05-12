@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://TU-USUARIO.github.io/TU-REPO/</loc></url>
-  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/servicios.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/portfolio.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/proyectos/ampliacion-del-circuito-de-colonias-judias-de-la-provincia-de-entre-rios.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/proyectos/analisis-de-la-competitividad-de-la-cadena-de-valor-turistica-de-la-provincia-de-neuquen.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/proyectos/diseno-estrategia-promocion-circuitos-turisticos-binacionales-region-salto-rande.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/proyectos/estrategia-para-el-desarrollo-de-la-oferta-turistica-boliviana.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/proyectos/estudio-de-expectativas-de-consumo-y-turismo-post-pandemia-en-centroamerica.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/proyectos/fortalecimiento-de-los-comites-de-desarrollo-turistico-del-oriente-de-el-salvador.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/proyectos/plan-estrategico-turismo-sustentable-la-rioja.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/proyectos/puesta-en-valor-de-las-producciones-de-las-artesania-y-otros-elementos-atractivos-de-la-cultura-indigena.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/quienes-somos.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/en/servicios.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/index.html</loc></url>
   <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/portfolio.html</loc></url>
-  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/quienes-somos.html</loc></url>
-  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/fortalecimiento-de-los-comites-de-desarrollo-turistico-del-oriente-de-el-salvador.html</loc></url>
   <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/ampliacion-del-circuito-de-colonias-judias-de-la-provincia-de-entre-rios.html</loc></url>
   <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/analisis-de-la-competitividad-de-la-cadena-de-valor-turistica-de-la-provincia-de-neuquen.html</loc></url>
-  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/estudio-de-expectativas-de-consumo-y-turismo-post-pandemia-en-centroamerica.html</loc></url>
-  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/puesta-en-valor-de-las-producciones-de-las-artesania-y-otros-elementos-atractivos-de-la-cultura-indigena.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/diseno-estrategia-promocion-circuitos-turisticos-binacionales-region-salto-rande.html</loc></url>
   <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/estrategia-para-el-desarrollo-de-la-oferta-turistica-boliviana.html</loc></url>
-  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/observatorios-economicos-y-sistemas-de-inteligencia-turistica.html</loc></url>
-  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/evaluacion-economica-de-proyectos-turisticos-estrategicos.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/estudio-de-expectativas-de-consumo-y-turismo-post-pandemia-en-centroamerica.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/fortalecimiento-de-los-comites-de-desarrollo-turistico-del-oriente-de-el-salvador.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/plan-estrategico-turismo-sustentable-la-rioja.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/proyectos/puesta-en-valor-de-las-producciones-de-las-artesania-y-otros-elementos-atractivos-de-la-cultura-indigena.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/quienes-somos.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pages/servicios.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/portfolio.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/proyectos/ampliacion-del-circuito-de-colonias-judias-de-la-provincia-de-entre-rios.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/proyectos/analisis-de-la-competitividad-de-la-cadena-de-valor-turistica-de-la-provincia-de-neuquen.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/proyectos/diseno-estrategia-promocion-circuitos-turisticos-binacionales-region-salto-rande.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/proyectos/estrategia-para-el-desarrollo-de-la-oferta-turistica-boliviana.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/proyectos/estudio-de-expectativas-de-consumo-y-turismo-post-pandemia-en-centroamerica.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/proyectos/fortalecimiento-de-los-comites-de-desarrollo-turistico-del-oriente-de-el-salvador.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/proyectos/plan-estrategico-turismo-sustentable-la-rioja.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/proyectos/puesta-en-valor-de-las-producciones-de-las-artesania-y-otros-elementos-atractivos-de-la-cultura-indigena.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/quienes-somos.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/pt/servicios.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/portfolio.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/proyectos/ampliacion-del-circuito-de-colonias-judias-de-la-provincia-de-entre-rios.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/proyectos/analisis-de-la-competitividad-de-la-cadena-de-valor-turistica-de-la-provincia-de-neuquen.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/proyectos/diseno-estrategia-promocion-circuitos-turisticos-binacionales-region-salto-rande.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/proyectos/estrategia-para-el-desarrollo-de-la-oferta-turistica-boliviana.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/proyectos/estudio-de-expectativas-de-consumo-y-turismo-post-pandemia-en-centroamerica.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/proyectos/fortalecimiento-de-los-comites-de-desarrollo-turistico-del-oriente-de-el-salvador.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/proyectos/plan-estrategico-turismo-sustentable-la-rioja.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/proyectos/puesta-en-valor-de-las-producciones-de-las-artesania-y-otros-elementos-atractivos-de-la-cultura-indigena.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/quienes-somos.html</loc></url>
+  <url><loc>https://TU-USUARIO.github.io/TU-REPO/zh/servicios.html</loc></url>
 </urlset>

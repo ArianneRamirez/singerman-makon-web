@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>
+   Servicios | Singerman &amp; Makón
+  </title>
+<meta content="Services de consultoría en planificación turística, marketing, evaluación económica, inteligencia de mercado, inversiones y sostenibilidad." name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="website" property="og:type"/>
+<meta content="Services | Singerman &amp; Makón" property="og:title"/>
+<meta content="Services de consultoría en planificación turística, marketing, evaluación económica, inteligencia de mercado, inversiones y sostenibilidad." property="og:description"/>
+<meta content="es_AR" property="og:locale"/>
+<link href="../assets/css/styles.css" rel="stylesheet"/>
+<link href="/en/servicios.html" rel="canonical"/><link href="/pages/servicios.html" hreflang="es" rel="alternate"/><link href="/en/servicios.html" hreflang="en" rel="alternate"/><link href="/pt/servicios.html" hreflang="pt" rel="alternate"/><link href="/zh/servicios.html" hreflang="zh-CN" rel="alternate"/><link href="/pages/servicios.html" hreflang="x-default" rel="alternate"/></head>
+<body>
+<header class="site-header" data-header="">
+<a aria-label="Go to homepage" class="logo" href="index.html">
+<img alt="Singerman &amp; Makón" loading="lazy" src="../assets/img/logo/Logo SM_color_estudio.png"/>
+</a>
+<button aria-expanded="false" aria-label="Open menu" class="nav-toggle" data-nav-toggle="">
+    ☰
+   </button>
+<nav class="main-nav" data-nav="">
+<a href="index.html">
+     Home
+    </a>
+<a aria-current="page" href="servicios.html">
+     Services
+    </a>
+<a href="portfolio.html">
+     Portfolio
+    </a>
+<a href="quienes-somos.html">
+     About us
+    </a>
+<a class="nav-pill" href="https://metrix-ia.com" rel="noopener" target="_blank">
+     Metrix IA
+    </a>
+<div aria-label="Seleccionar idioma" class="language-switcher"><a href="../pages/servicios.html">ES</a><a aria-current="true" href="servicios.html">EN</a><a href="../pt/servicios.html">PT</a><a href="../zh/servicios.html">中文</a></div></nav>
+</header>
+<main>
+<section class="page-hero section-blue services-hero">
+<div class="container split">
+<div>
+<p class="eyebrow">
+       Services
+      </p>
+<h1>
+       Our services empower your organization
+      </h1>
+<p>
+       Explore our services and put our consulting capabilities to work.
+      </p>
+<a class="btn" href="portfolio.html">
+       View projects
+      </a>
+</div>
+<div class="image-slot image-slot-large hero-servicios">
+<small>
+<div><img src="../assets/img/servicios/hero-servicios.jpg"/> </div>
+</small>
+</div>
+</div>
+</section>
+<section class="section services-page-section">
+<div class="container">
+<div class="service-list service-list-rich" data-services-list="">
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+    Copyright Singerman &amp; Makón – All rights reserved
+   </div>
+</footer>
+<script src="../data/site-data-en.js">
+</script>
+<script>window.APP_CONFIG={assetBase:'../assets/',labels:{service:'Service',seeMore:'View more',seeProject:'View project →',allAreas:'All areas',noProjects:'No projects found with those filters.',stepOrigin:'Where are you coming from?',privateCompany:'Private company',publicAgency:'Public agency',other:'Other',stepNeed:'What does your organization need?',recommended:'Recommended service',restart:'Start again',servicePath:'servicios.html',projectPreviewBase:'proyectos/',projectGridBase:'proyectos/',formReady:'Form ready. To activate it, replace FORM_ID_REEMPLAZAR in the action attribute with your Formspree endpoint.',sending:'Sending...',sent:'Thank you. Your inquiry was sent successfully.',sendError:'There was a problem sending the form. Check the Formspree configuration or try again.',submitText:'Send inquiry'}};</script><script src="../assets/js/main.js">
+</script>
+<script>
+   const container = document.querySelector('[data-services-list]');
+    container.innerHTML = SITE_DATA.services.map((service, index) => `
+      <article class="service-detail service-detail-rich" id="${service.slug}">
+        <div class="service-image-wrap">
+          <img src="${assetUrl(service.image)}" alt="${service.title}">
+        </div>
+        <div class="service-detail-content">
+          <p class="eyebrow">${String(index + 1).padStart(2, '0')} · Service</p>
+          <h2>${service.title}</h2>
+          <p>${service.text}</p>
+          <h3>Related products and services:</h3>
+          <ul>
+            ${service.products.map(item => `<li>${item}</li>`).join('')}
+          </ul>
+        </div>
+      </article>
+    `).join('');
+  </script>
+</body>
+</html>

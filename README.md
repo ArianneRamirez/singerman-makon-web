@@ -92,3 +92,46 @@ Para GitHub Pages:
 3. Elegir `Deploy from a branch`.
 4. Branch: `main`.
 5. Folder: `/root`.
+
+
+## Estructura multilenguaje
+
+Se agregaron versiones estáticas por idioma:
+
+- `/index.html` y `/pages/` → español
+- `/en/` → inglés
+- `/pt/` → portugués
+- `/zh/` → chino simplificado
+
+El encabezado incluye selector de idioma: `ES | EN | PT | 中文`.
+
+### SEO internacional
+
+Cada página incluye etiquetas `hreflang` para indicar versiones alternativas por idioma. El archivo `sitemap.xml` incluye todas las páginas, pero antes de publicar conviene reemplazar:
+
+```text
+https://TU-USUARIO.github.io/TU-REPO
+```
+
+por la URL real de GitHub Pages o el dominio definitivo.
+
+### Edición de textos traducidos
+
+Los servicios y proyectos que se cargan dinámicamente usan:
+
+- `data/site-data.js` para español
+- `data/site-data-en.js` para inglés
+- `data/site-data-pt.js` para portugués
+- `data/site-data-zh.js` para chino
+
+Las páginas estáticas de cada idioma están dentro de su carpeta correspondiente.
+
+
+## Versión multilenguaje corregida
+
+Esta versión completa las traducciones pendientes de:
+- Portfolio y datos de proyectos en `data/site-data-en.js`, `data/site-data-pt.js` y `data/site-data-zh.js`.
+- Páginas individuales de proyectos en `/en/proyectos/`, `/pt/proyectos/` y `/zh/proyectos/`.
+- Textos de integrantes y diferencial institucional en `quienes-somos.html` de cada idioma.
+
+El selector de idioma se mantiene en el encabezado y las etiquetas SEO/hreflang siguen activas.
