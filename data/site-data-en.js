@@ -1,118 +1,110 @@
-// Datos editoriales para idioma: en
+// Editorial data for language: en
 window.SITE_DATA = {
-  /*
-    IMÁGENES
-    -------
-    Por ahora las imágenes apuntan al WordPress publicado para que el sitio funcione completo.
-    Cuando quieras independizarlo 100%, guardá cada imagen en /assets/img/ y reemplazá estas URLs.
-
-    Ejemplo para servicios:
-    image: '../assets/img/servicios/planificacion.jpg'
-  */
   services: [
     {
       slug: 'planificacion',
       title: 'Planning and Development',
       shortText: 'We design comprehensive tourism development strategies aimed at strengthening destination competitiveness and improving quality of life for communities.',
-      text: 'Impulsamos el desarrollo turístico a través de estrategias integrales que fortalecen la competitividad de los destinos y promueven una gestión eficiente, sostenible y articulada entre actores públicos, privados y comunitarios.',
-      image: 'img/servicios/planificacion.png',
+      text: 'We promote tourism development through comprehensive strategies that strengthen destination competitiveness and foster efficient, sustainable management coordinated among public, private and community stakeholders.',
+      image: '../assets/img/servicios/planificacion.png',
       products: [
-        'Planes Maestros de Turismo Sostenible',
-        'Planes de Ordenamiento Territorial Turístico',
-        'Creación y fortalecimiento de Organizaciones de Gestión de Destinos (OGD)',
-        'Programas de fortalecimiento institucional y gobernanza turística',
-        'Asesoramiento en normativa, regulación y calidad turística',
-        'Estrategias de fortalecimiento de la cadena de valor turístico de destinos',
-        'Planes de negocio y diseño integral de proyectos turísticos',
-        'Estudios de prefactibilidad y factibilidad de proyectos',
-        'Asistencia en estructuración financiera y acceso a financiamiento'
+        'Sustainable Tourism Master Plans',
+        'Tourism Land-Use Planning Plans',
+        'Creation and strengthening of Destination Management Organizations (DMOs)',
+        'Institutional strengthening and tourism governance programmes',
+        'Advisory services on tourism regulations, standards and quality',
+        'Strategies to strengthen the tourism value chain in destinations',
+        'Business plans and comprehensive design of tourism projects',
+        'Pre-feasibility and feasibility studies for projects',
+        'Assistance with financial structuring and access to funding'
       ]
     },
     {
       slug: 'marketing',
       title: 'Marketing and Communications',
       shortText: 'We create positioning and promotion strategies that enhance each destination’s identity and connect it with key markets.',
-      text: 'Diseñamos estrategias de posicionamiento y promoción que potencian la identidad de los destinos y conectan de manera efectiva con sus mercados prioritarios.',
+      text: 'We design positioning and promotion strategies that strengthen destination identity and connect effectively with priority markets.',
       image: '../assets/img/servicios/marketing.png',
       products: [
-        'Planes de marketing y posicionamiento turístico',
-        'Diseño e implementación de estrategias de promoción',
-        'Desarrollo y gestión de marcas turísticas',
-        'Diseño de sistemas de comunicación (identidad visual, señalética, contenidos)',
-        'Producción de materiales audiovisuales y digitales',
-        'Estudios de mercado y segmentación de demanda',
-        'Estrategias de atracción de inversiones turísticas'
+        'Tourism marketing and positioning plans',
+        'Design and implementation of promotion strategies',
+        'Development and management of tourism brands',
+        'Design of communication systems: visual identity, signage and content',
+        'Production of audiovisual and digital materials',
+        'Market research and demand segmentation',
+        'Strategies to attract tourism investment'
       ]
     },
     {
       slug: 'analisis',
       title: 'Economic Analysis and Evaluation',
       shortText: 'We generate strategic information for decision-making, assessing economic impact and the feasibility of tourism projects.',
-      text: 'Generamos información estratégica para la toma de decisiones, evaluando el desempeño del sector y el impacto económico y social del turismo.',
+      text: 'We generate strategic information for decision-making by assessing sector performance and the economic and social impact of tourism.',
       image: '../assets/img/servicios/analisis.png',
       products: [
-        'Evaluación de proyectos de inversión',
-        'Estudios de impacto económico y social del turismo',
-        'Informes de coyuntura macroeconómica y sectorial',
-        'Análisis de la estructura y dinámica del sector turístico',
-        'Modelización económica y proyecciones sectoriales',
-        'Asesoramiento técnico-económico continuo',
-        'Programas de sensibilización económica del turismo en destinos'
+        'Evaluation of investment projects',
+        'Studies on the economic and social impact of tourism',
+        'Macroeconomic and sector outlook reports',
+        'Analysis of the structure and dynamics of the tourism sector',
+        'Economic modelling and sector projections',
+        'Ongoing technical and economic advisory services',
+        'Programmes to raise awareness of the economic value of tourism in destinations'
       ]
     },
     {
       slug: 'inteligencia',
       title: 'Market Intelligence',
       shortText: 'We develop advanced tourism intelligence systems to anticipate trends, monitor performance and optimize destination management.',
-      text: 'Desarrollamos sistemas de información turística que permiten anticipar tendencias, monitorear el desempeño y optimizar la gestión de destinos mediante el uso de analítica avanzada y tecnologías emergentes.',
+      text: 'We develop tourism information systems that make it possible to anticipate trends, monitor performance and optimize destination management through advanced analytics and emerging technologies.',
       image: '../assets/img/servicios/inteligencia.png',
       products: [
-        'Diseño e implementación de observatorios de turismo sostenible',
-        'Plataformas de información turística',
-        'Desarrollo de soluciones de Business Intelligence (BI) y Business Analytics (BA)',
-        'Diseño de tableros de control e indicadores clave (dashboards)',
-        'Análisis descriptivos, predictivos y prospectivos del comportamiento turístico',
-        'Integración de inteligencia artificial para el análisis y la toma de decisiones',
-        'Social listening, analítica web y monitoreo de desempeño digital',
-        'Diseño metodológico de encuestas y estudios de demanda',
-        'Elaboración de informes estratégicos y reportes periódicos',
-        'Capacitación en gestión, análisis y uso de información'
+        'Design and implementation of sustainable tourism observatories',
+        'Tourism information platforms',
+        'Development of Business Intelligence (BI) and Business Analytics (BA) solutions',
+        'Design of dashboards and key performance indicators',
+        'Descriptive, predictive and prospective analysis of tourism behaviour',
+        'Integration of artificial intelligence for analysis and decision-making',
+        'Social listening, web analytics and digital performance monitoring',
+        'Methodological design of surveys and demand studies',
+        'Preparation of strategic reports and periodic briefings',
+        'Training in information management, analysis and use'
       ]
     },
     {
       slug: 'fusiones',
       title: 'Mergers and Acquisitions',
       shortText: 'We advise on investment, acquisition, sale and business expansion processes, enabling strategic growth opportunities in the sector.',
-      text: 'Asesoramos procesos de inversión y reestructuración empresarial, facilitando oportunidades estratégicas de crecimiento en el sector turístico.',
+      text: 'We advise on investment and business restructuring processes, enabling strategic growth opportunities in the tourism sector.',
       image: '../assets/img/servicios/fusiones.png',
       products: [
-        'Asesoramiento en compra y venta de empresas',
-        'Búsqueda y evaluación de oportunidades de inversión',
-        'Valuación de compañías y activos turísticos',
-        'Estructuración de operaciones y estrategias de negociación',
-        'Identificación de inversores y socios estratégicos',
-        'Optimización de estructuras de capital y financiamiento',
-        'Due diligence y análisis de riesgos'
+        'Advisory services for the purchase and sale of companies',
+        'Search and assessment of investment opportunities',
+        'Valuation of companies and tourism assets',
+        'Structuring of transactions and negotiation strategies',
+        'Identification of investors and strategic partners',
+        'Optimization of capital and financing structures',
+        'Due diligence and risk analysis'
       ]
     },
     {
       slug: 'sostenibilidad',
       title: 'Sustainability and Environmental Management',
       shortText: 'We design and implement environmental management, climate mitigation and adaptation strategies, and initiatives that value natural and cultural heritage.',
-      text: 'Promovemos un desarrollo turístico responsable mediante la integración de criterios ambientales, sociales y culturales en la planificación, gestión y operación de destinos y proyectos.',
+      text: 'We promote responsible tourism development by integrating environmental, social and cultural criteria into the planning, management and operation of destinations and projects.',
       image: '../assets/img/servicios/sostenibilidad.png',
       products: [
-        'Planes de gestión ambiental para destinos y proyectos',
-        'Implementación de certificación internacional Biosphere de destinos sostenibles',
-        'Evaluaciones de impacto ambiental y social',
-        'Estrategias de mitigación y adaptación al cambio climático',
-        'Programas de gestión de residuos y economía circular',
-        'Certificaciones y sistemas de calidad y sostenibilidad',
-        'Puesta en valor del patrimonio natural y cultural',
-        'Programas de sensibilización y educación ambiental'
+        'Environmental management plans for destinations and projects',
+        'Implementation of the international Biosphere certification for sustainable destinations',
+        'Environmental and social impact assessments',
+        'Climate change mitigation and adaptation strategies',
+        'Waste management and circular economy programmes',
+        'Quality and sustainability certifications and systems',
+        'Enhancement of natural and cultural heritage',
+        'Environmental awareness and education programmes'
       ]
     }
   ],
+
   projects: [
     {slug:'fortalecimiento-de-los-comites-de-desarrollo-turistico-del-oriente-de-el-salvador', title:'Strengthening Tourism Development Committees in Eastern El Salvador', category:'Planning and Development', country:'El Salvador'},
     {slug:'ampliacion-del-circuito-de-colonias-judias-de-la-provincia-de-entre-rios', title:'Expansion of the Jewish Colonies Circuit in Entre Ríos Province', category:'Planning and Development', country:'Argentina'},
@@ -122,4 +114,5 @@ window.SITE_DATA = {
     {slug:'estrategia-para-el-desarrollo-de-la-oferta-turistica-boliviana', title:'Strategy for the Development of Bolivia’s Tourism Offer', category:'Planning and Development', country:'Bolivia'},
     {slug:'diseno-estrategia-promocion-circuitos-turisticos-binacionales-region-salto-rande', title:'Design and Promotion Strategy for Binational Tourism Circuits in the Salto Grande Region', category:'Planning and Development', country:'Argentina'},
     {slug:'plan-estrategico-turismo-sustentable-la-rioja', title:'Strategic Sustainable Tourism Plan for La Rioja Province', category:'Planning and Development', country:'Argentina'}
-  ]};
+  ]
+};
