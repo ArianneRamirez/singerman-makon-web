@@ -1,3 +1,102 @@
+# REVISIÓN TRADUCCIÓN CHINA - SINGERMAN & MAKÓN
+# Documento de trabajo para correcciones
+# Fecha: 2026-05-13
+
+---
+
+## 1. RESUMEN EJECUTIVO (prioridades)
+
+| Prioridad | Tarea | Archivos afectados |
+|-----------|-------|---------------------|
+| 🔴 URGENTE | Traducir `text` de cada servicio (está en español) | site-data-zh.js |
+| 🔴 URGENTE | Traducir `products` de cada servicio (están en español) | site-data-zh.js |
+| 🟡 ALTA | Corregir meta description en servicios.html | servicios.html |
+| 🟡 ALTA | Cambiar og:locale de "es_AR" a "zh_CN" | Los 4 archivos HTML |
+| 🟡 ALTA | Traducir los options del formulario de contacto | index.html |
+| 🟢 MEDIA | Traducir perfiles del equipo (Pablo, Camilo, Luca) | quienes-somos.html |
+| 🟢 MEDIA | Traducir el campo "Área" y el texto del formulario | index.html |
+
+---
+
+## 2. ERRORES POR ARCHIVO HTML
+
+### servicios.html
+
+| Línea aprox. | Error | Corrección |
+|--------------|-------|-------------|
+| `<meta name="description">` | "服务 de consultoría en planificación turística..." | "提供旅游规划、营销、经济评估、市场情报、投资与可持续发展的专业咨询服务。" |
+| `<meta property="og:description">` | Mismo error | Misma corrección |
+| `<meta property="og:locale">` | `content="es_AR"` | `content="zh_CN"` |
+
+### index.html
+
+| Línea aprox. | Error | Corrección |
+|--------------|-------|-------------|
+| `<meta property="og:locale">` | `content="es_AR"` | `content="zh_CN"` |
+| Label "Área" (en formulario) | "Área" | "咨询领域" |
+| Option "Planificación y Desarrollo" | En español | "规划与发展" |
+| Option "Marketing y Comunicación" | En español | "市场营销与传播" |
+| Option "Análisis y Evaluación Económica" | En español | "经济分析与评估" |
+| Option "Inteligencia de Mercado" | En español | "市场情报" |
+| Option "Fusiones y Adquisiciones" | En español | "并购" |
+| Option "Sostenibilidad y Gestión Ambiental" | En español | "可持续发展与环境管理" |
+| Párrafo "Complete el formulario..." | En español | "请填写表单，我们的团队将与您联系，并将您的咨询转至相应部门。" |
+
+### portfolio.html
+
+| Error | Corrección |
+|-------|-------------|
+| `og:locale="es_AR"` | `og:locale="zh_CN"` |
+
+### quienes-somos.html
+
+| Error | Corrección |
+|-------|-------------|
+| `og:locale="es_AR"` | `og:locale="zh_CN"` |
+| Texto de Pablo Singerman (en español) | Ver traducción abajo |
+| Texto de Camilo Makón (en español) | Ver traducción abajo |
+| Texto de Luca Singerman (en español) | Ver traducción abajo |
+| "经理 de Singerman & Makón" | "Singerman & Makón 经理" o "运营经理" |
+
+---
+
+## 3. TRADUCCIONES PARA PERFILES DEL EQUIPO (quienes-somos.html)
+
+### Pablo Singerman (texto actual en español - debe reemplazarse)
+
+**Texto original en español:**
+> Dr. Pablo Singerman. Economista, investigador y consultor internacional especializado en economía del turismo y desarrollo estratégico. Co-fundador y director de Singerman & Makón y co-fundador de Metrix Inteligencia Artificial S.A. Actualmente, Vicepresidente para las Américas de la Organización Mundial del Enoturismo (OMET). Amplia trayectoria liderando proyectos de planificación turística, marketing y observatorios económicos en América Latina, además de dirigir la Maestría en Economía y Turismo de la Universidad de Buenos Aires.
+
+**Traducción al chino:**
+> Pablo Singerman 博士。经济学家、研究员及国际顾问，专精于旅游经济与战略发展。Singerman & Makón 联合创始人兼董事，Metrix Inteligencia Artificial S.A. 联合创始人。现任世界葡萄酒旅游组织（OMET）美洲区副主席。拥有丰富的拉丁美洲旅游规划、营销及经济观察站项目领导经验，同时担任布宜诺斯艾利斯大学经济与旅游硕士项目主任。
+
+---
+
+### Camilo Makón (texto actual en español - debe reemplazarse)
+
+**Texto original en español:**
+> Ernesto Camilo Makón. Licenciado en Turismo, especialista en planificación estratégica, inteligencia turística y desarrollo de modelos de análisis aplicados al sector turístico y económico. Co-fundador y director de Singerman & Makón y co-fundador de Metrix Inteligencia Artificial S.A. Cuenta con una amplia trayectoria liderando proyectos de desarrollo turístico, estudios de impacto económico, inteligencia de mercado y observatorios turísticos en América Latina, coordinando equipos multidisciplinarios y diseñando metodologías de análisis orientadas a la toma de decisiones estratégicas para organismos públicos, empresas y organismos internacionales.
+
+**Traducción al chino:**
+> Ernesto Camilo Makón。旅游学学士，战略规划、旅游情报及旅游经济领域分析模型开发专家。Singerman & Makón 联合创始人兼董事，Metrix Inteligencia Artificial S.A. 联合创始人。在拉丁美洲拥有丰富的旅游发展项目、经济影响研究、市场情报及旅游观察站领导经验，协调多学科团队，为公共机构、企业及国际组织设计面向战略决策的分析方法论。
+
+---
+
+### Luca Singerman (texto actual en español - debe reemplazarse)
+
+**Texto original en español:**
+> Manager de Singerman & Makón. Acompaña la coordinación de proyectos, la gestión operativa y la articulación de equipos técnicos para el desarrollo de soluciones orientadas a destinos, organizaciones e instituciones.
+
+**Traducción al chino:**
+> Singerman & Makón 经理。负责项目协调、运营管理及技术团队衔接，为目的地、组织和机构开发解决方案。
+
+---
+
+## 4. TRADUCCIÓN COMPLETA PARA site-data-zh.js
+
+### Instrucción: Reemplaza TODO el contenido de tu archivo site-data-zh.js por el siguiente:
+
+```javascript
 // Datos editoriales para idioma: zh
 window.SITE_DATA = {
   services: [

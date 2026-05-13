@@ -104,6 +104,7 @@ Se agregaron versiones estáticas por idioma:
 - `/zh/` → chino simplificado
 
 El encabezado incluye selector de idioma: `ES | EN | PT | 中文`.
+Las traduccines zh corresponden al Chino simplificado estándar, usado en China continental y Singapur. Variante más usada del mundo (~950 millones de hablantes nativos).
 
 ### SEO internacional
 
