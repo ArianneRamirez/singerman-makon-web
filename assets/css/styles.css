@@ -216,14 +216,6 @@ h3 {
     linear-gradient(135deg, var(--sky), var(--sky-2));
 }
 
-.hero.section-blue,
-.page-hero.section-blue {
-  background:
-    radial-gradient(circle at 12% 18%, rgba(0, 166, 214, 0.16), transparent 28%),
-    radial-gradient(circle at 82% 10%, rgba(5, 75, 147, 0.12), transparent 30%),
-    linear-gradient(135deg, #f6fbff 0%, #e7f6ff 48%, #f9fdff 100%);
-}
-
 .section-dark {
   color: var(--white);
   background:
@@ -338,11 +330,41 @@ body:not(.home) .site-header {
 /* =========================================================
    6. Home / Hero
    ========================================================= */
-.hero {
-  min-height: 720px;
-  padding: 96px 0 88px;
-}
+   .hero {
+    position: relative;
+    min-height: 720px;
+    padding: 96px 0 88px;
+    overflow: hidden;
+    isolation: isolate;
+  
+    background:
+      linear-gradient(
+        135deg,
+        rgba(255,255,255,0.62),
+        rgba(231,246,255,0.58)
+      ),
+      url("../img/hero/fondohome.png");
+  
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  
+    background:
+      radial-gradient(circle at 15% 20%, rgba(5,75,147,.10), transparent 30%),
+      radial-gradient(circle at 85% 12%, rgba(242,140,40,.08), transparent 24%);
+  
+    pointer-events: none;
+  }
 
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
 .hero-grid,
 .split,
 .form-grid,
@@ -1350,5 +1372,10 @@ body:not(.home) .site-header {
   .client-logos span {
     width: 100%;
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    background-position: 62% center;
   }
 }
