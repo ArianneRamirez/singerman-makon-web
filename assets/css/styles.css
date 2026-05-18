@@ -1379,3 +1379,78 @@ body:not(.home) .site-header {
     background-position: 62% center;
   }
 }
+/* Carrusel de logos / clientes */
+.logos-section {
+  overflow: hidden;
+}
+
+.logos-carousel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 22px;
+  padding: 8px 0;
+}
+
+.logos-carousel::before,
+.logos-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logos-carousel::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--white), transparent);
+}
+
+.logos-carousel::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--white), transparent);
+}
+
+.logos-track {
+  display: flex;
+  width: max-content;
+  gap: 14px;
+  animation: logos-scroll 28s linear infinite;
+}
+
+.logos-track span {
+  flex: 0 0 auto;
+  padding: 12px 20px;
+  border: 1px solid rgba(5, 75, 147, 0.12);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffffff, #f3fbff);
+  color: var(--deep);
+  font-weight: 850;
+  white-space: nowrap;
+  box-shadow: 0 8px 22px rgba(6, 45, 91, 0.05);
+}
+
+.logos-carousel:hover .logos-track {
+  animation-play-state: paused;
+}
+
+@keyframes logos-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .logos-track {
+    animation-duration: 22s;
+  }
+
+  .logos-carousel::before,
+  .logos-carousel::after {
+    width: 46px;
+  }
+}
