@@ -223,6 +223,29 @@ async function handleContactForm() {
     }
   });
 }
+// Funcionamiento del carrusel de logos
+const logosTrack = document.getElementById("logosTrack");
+
+if (logosTrack) {
+  const totalLogos = 28;
+
+  // Detecta si la página está en la raíz o dentro de /en, /pt, /zh, etc.
+  const mainScript = document.querySelector('script[src$="assets/js/main.js"]');
+  const scriptSrc = mainScript ? mainScript.getAttribute("src") : "assets/js/main.js";
+  const assetsBase = scriptSrc.replace(/(^|.*\/)assets\/js\/main\.js$/, "$1assets");
+
+  const logos = Array.from({ length: totalLogos }, (_, i) => {
+    const num = i + 1;
+    return `
+      <div class="logo-item">
+        <img src="${assetsBase}/img/carrusel/${num}.png" alt="Client logo ${num}" loading="lazy">
+      </div>
+    `;
+  }).join("");
+
+  // Duplicamos para lograr el efecto infinito
+  logosTrack.innerHTML = logos + logos;
+}
 
 renderServices();
 renderWizard();

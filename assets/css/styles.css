@@ -34,7 +34,7 @@
 
   --radius: 28px;
   --radius-sm: 18px;
-  --container: 1160px;
+  --container: 1320px;
 }
 
 /* =========================================================
@@ -76,10 +76,9 @@ a {
 }
 
 .container {
-  width: min(var(--container), 92vw);
+  width: min(var(--container), 94vw);
   margin-inline: auto;
 }
-
 /* =========================================================
    3. Tipografía y componentes globales
    ========================================================= */
@@ -330,41 +329,41 @@ body:not(.home) .site-header {
 /* =========================================================
    6. Home / Hero
    ========================================================= */
-   .hero {
-    position: relative;
-    min-height: 720px;
-    padding: 96px 0 88px;
-    overflow: hidden;
-    isolation: isolate;
-  
-    background:
-      linear-gradient(
-        135deg,
-        rgba(255,255,255,0.62),
-        rgba(231,246,255,0.58)
-      ),
-      url("../img/hero/fondohome.png");
-  
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-  
-    background:
-      radial-gradient(circle at 15% 20%, rgba(5,75,147,.10), transparent 30%),
-      radial-gradient(circle at 85% 12%, rgba(242,140,40,.08), transparent 24%);
-  
-    pointer-events: none;
-  }
+.hero {
+  position: relative;
+  min-height: 720px;
+  padding: 96px 0 88px;
+  overflow: hidden;
+  isolation: isolate;
 
-  .hero .container {
-    position: relative;
-    z-index: 2;
-  }
+  background:
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.62),
+      rgba(231, 246, 255, 0.58)),
+    url("../img/hero/fondohome.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 15% 20%, rgba(5, 75, 147, .10), transparent 30%),
+    radial-gradient(circle at 85% 12%, rgba(242, 140, 40, .08), transparent 24%);
+
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-grid,
 .split,
 .form-grid,
@@ -1213,6 +1212,7 @@ body:not(.home) .site-header {
    17. Responsive
    ========================================================= */
 @media (max-width: 980px) {
+
   .hero-grid,
   .split,
   .form-grid,
@@ -1323,6 +1323,7 @@ body:not(.home) .site-header {
 }
 
 @media (max-width: 640px) {
+
   .eyebrow,
   .section-heading .eyebrow,
   .page-hero .eyebrow,
@@ -1374,11 +1375,13 @@ body:not(.home) .site-header {
     text-align: center;
   }
 }
+
 @media (max-width: 768px) {
   .hero {
     background-position: 62% center;
   }
 }
+
 /* Carrusel de logos / clientes */
 .logos-section {
   overflow: hidden;
@@ -1439,6 +1442,7 @@ body:not(.home) .site-header {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -1454,31 +1458,93 @@ body:not(.home) .site-header {
     width: 46px;
   }
 }
+
 .recomendador-actions {
   margin-top: 28px;
 }
-.metrix-card-logo{
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    object-fit: contain;
+
+.metrix-card-logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
-.metrix-card{
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255,255,255,0.15);
+.metrix-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
-    border-radius: 24px;
-    padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 
-    box-shadow:
-        0 8px 32px rgba(0,0,0,0.15);
+  border-radius: 24px;
+  padding: 24px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Carrusel infinito de logos con imágenes */
+.logos-section {
+  padding: 36px 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.logos-section .container {
+  overflow: hidden;
+}
+
+.logos-track-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logos-track {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+
+  width: fit-content;
+
+  animation: scrollLogos 40s linear infinite;
+  will-change: transform;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+
+  width: 140px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes scrollLogos {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+.difference-card-blue {
+  margin-top: -8px;
 }
